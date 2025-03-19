@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5e432fa81c1fde0591c85a9734e12cb8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5e432fa81c1fde0591c85a9734e12cb8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5e432fa81c1fde0591c85a9734e12cb8 = L.map(
+                "map_5e432fa81c1fde0591c85a9734e12cb8",
+                {
+                    center: [41.6938, 44.8015],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+
+            
+
+        
+    
+            var tile_layer_0f749ef647cdf9f02c1ef028c291f8d4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0f749ef647cdf9f02c1ef028c291f8d4.addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var marker_c6989829aa3445490639b679b07f4f35 = L.marker(
+                [41.8085, 44.7797],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_d86cede583c073864fe6ccb420f53830 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a89c127abc290011d70ac2021490a76 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9026a611b6848af18d75dbda7ca26539 = $(`<div id="html_9026a611b6848af18d75dbda7ca26539" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.8085,44.7797" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Chronicle of Georgia     </a><br>A massive stone monument telling Georgia’s history, located on a hill with breathtaking city views.     </div>`)[0];
+                popup_7a89c127abc290011d70ac2021490a76.setContent(html_9026a611b6848af18d75dbda7ca26539);
+            
+        
+
+        marker_c6989829aa3445490639b679b07f4f35.bindPopup(popup_7a89c127abc290011d70ac2021490a76)
+        ;
+
+        
+    
+    
+                marker_c6989829aa3445490639b679b07f4f35.setIcon(icon_d86cede583c073864fe6ccb420f53830);
+            
+    
+            var marker_f3c100046e68f828b97602d67cf1cfd2 = L.marker(
+                [41.7053, 44.7846],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_887ab9a419b6e8e897aefe21b3f5c912 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cefc652d1679d54f4eb180300fd3b22a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f20e39c74659841a71c7a4758e60d0f6 = $(`<div id="html_f20e39c74659841a71c7a4758e60d0f6" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.7053,44.7846" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Stamba Hotel     </a><br>A former Soviet printing house transformed into a brutalist-chic hotel with a huge indoor library and a greenhouse café.     </div>`)[0];
+                popup_cefc652d1679d54f4eb180300fd3b22a.setContent(html_f20e39c74659841a71c7a4758e60d0f6);
+            
+        
+
+        marker_f3c100046e68f828b97602d67cf1cfd2.bindPopup(popup_cefc652d1679d54f4eb180300fd3b22a)
+        ;
+
+        
+    
+    
+                marker_f3c100046e68f828b97602d67cf1cfd2.setIcon(icon_887ab9a419b6e8e897aefe21b3f5c912);
+            
+    
+            var marker_57d6c0255dc28af8b20ce0720e515d43 = L.marker(
+                [41.6885, 44.8078],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_d74ac346532b8d20ae7576e2f1f74d3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbef450ebbf1d72f171a21d1a1a80221 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9342e20610cd9398a3e9b10cf279d6a4 = $(`<div id="html_9342e20610cd9398a3e9b10cf279d6a4" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.6885,44.8078" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Orbeliani Sulfur Baths     </a><br>Famous sulfur bathhouse with stunning Persian-style blue tilework, part of Tbilisi’s historic bath district.     </div>`)[0];
+                popup_dbef450ebbf1d72f171a21d1a1a80221.setContent(html_9342e20610cd9398a3e9b10cf279d6a4);
+            
+        
+
+        marker_57d6c0255dc28af8b20ce0720e515d43.bindPopup(popup_dbef450ebbf1d72f171a21d1a1a80221)
+        ;
+
+        
+    
+    
+                marker_57d6c0255dc28af8b20ce0720e515d43.setIcon(icon_d74ac346532b8d20ae7576e2f1f74d3f);
+            
+    
+            var marker_0f0407ba22894da15451d05e0cff731e = L.marker(
+                [41.7493, 44.7339],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_81fdc47a3635e62ba1adf8796b4be9a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_550279bd7d2ca5b871d0106869cb2a5e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_889b5b2615b732dbc49f6f4435927879 = $(`<div id="html_889b5b2615b732dbc49f6f4435927879" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.7493,44.7339" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Lisi Lake     </a><br>A peaceful, scenic lake on the outskirts of Tbilisi, perfect for walking, jogging, or relaxing away from the crowds.     </div>`)[0];
+                popup_550279bd7d2ca5b871d0106869cb2a5e.setContent(html_889b5b2615b732dbc49f6f4435927879);
+            
+        
+
+        marker_0f0407ba22894da15451d05e0cff731e.bindPopup(popup_550279bd7d2ca5b871d0106869cb2a5e)
+        ;
+
+        
+    
+    
+                marker_0f0407ba22894da15451d05e0cff731e.setIcon(icon_81fdc47a3635e62ba1adf8796b4be9a3);
+            
+    
+            var marker_ace2ad12bd70a7aed3484b698cfbe6f1 = L.marker(
+                [41.6976, 44.7444],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_fe8be16a27e36053f713bf7db56b0ea1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b99fe55f8a6260c12dbda8c0ebde3d4f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f6281de77a77a1e7f3f80926bcdac09e = $(`<div id="html_f6281de77a77a1e7f3f80926bcdac09e" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.6976,44.7444" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Vake Park & Turtle Lake     </a><br>Tbilisi’s largest park leading to a small lake in the hills, a perfect spot for chilling, coffee, and light hiking.     </div>`)[0];
+                popup_b99fe55f8a6260c12dbda8c0ebde3d4f.setContent(html_f6281de77a77a1e7f3f80926bcdac09e);
+            
+        
+
+        marker_ace2ad12bd70a7aed3484b698cfbe6f1.bindPopup(popup_b99fe55f8a6260c12dbda8c0ebde3d4f)
+        ;
+
+        
+    
+    
+                marker_ace2ad12bd70a7aed3484b698cfbe6f1.setIcon(icon_fe8be16a27e36053f713bf7db56b0ea1);
+            
+    
+            var marker_8a31f1d488a59e4f9f3bfe228c82dcca = L.marker(
+                [41.698, 44.7951],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_710797660bdb8d6b5e1ab9e33e150dfb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b4ca6cf27bcb40d9892d0ce66d7779b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b5e7411982751b772c89aea69ad14faa = $(`<div id="html_b5e7411982751b772c89aea69ad14faa" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.698,44.7951" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Dry Bridge Market     </a><br>The city’s most famous flea market, selling Soviet-era relics, vintage cameras, military gear, and unique thrift finds.     </div>`)[0];
+                popup_9b4ca6cf27bcb40d9892d0ce66d7779b.setContent(html_b5e7411982751b772c89aea69ad14faa);
+            
+        
+
+        marker_8a31f1d488a59e4f9f3bfe228c82dcca.bindPopup(popup_9b4ca6cf27bcb40d9892d0ce66d7779b)
+        ;
+
+        
+    
+    
+                marker_8a31f1d488a59e4f9f3bfe228c82dcca.setIcon(icon_710797660bdb8d6b5e1ab9e33e150dfb);
+            
+    
+            var marker_7ccfd3da7d903772bf9736b47e9d6024 = L.marker(
+                [41.7024, 44.7848],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_726890c6b1e6ae9e1bcc129df216df23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_178afabced6f02d1ccd6f6cc347f20ef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5ccd5a0b8bc2b453a0b1bcc46bc9cea4 = $(`<div id="html_5ccd5a0b8bc2b453a0b1bcc46bc9cea4" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.7024,44.7848" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Chaos Concept Store     </a><br>A high-end thrift store with carefully curated vintage and streetwear pieces, ideal for finding unique fits.     </div>`)[0];
+                popup_178afabced6f02d1ccd6f6cc347f20ef.setContent(html_5ccd5a0b8bc2b453a0b1bcc46bc9cea4);
+            
+        
+
+        marker_7ccfd3da7d903772bf9736b47e9d6024.bindPopup(popup_178afabced6f02d1ccd6f6cc347f20ef)
+        ;
+
+        
+    
+    
+                marker_7ccfd3da7d903772bf9736b47e9d6024.setIcon(icon_726890c6b1e6ae9e1bcc129df216df23);
+            
+    
+            var marker_490941ab974ba06171d6025cd424c5b4 = L.marker(
+                [41.7101, 44.7975],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_2c1359aa6f897a66cab9f8b8e365a87c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27c1ad3d804b0aa7f0d9b7a204bfbce3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2f55b03c0f5c3f01e42622522235e10 = $(`<div id="html_b2f55b03c0f5c3f01e42622522235e10" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.7101,44.7975" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Aghmashenebeli Avenue Thrift Shops     </a><br>A lesser-known thrift hotspot with multiple secondhand stores offering affordable vintage fashion.     </div>`)[0];
+                popup_27c1ad3d804b0aa7f0d9b7a204bfbce3.setContent(html_b2f55b03c0f5c3f01e42622522235e10);
+            
+        
+
+        marker_490941ab974ba06171d6025cd424c5b4.bindPopup(popup_27c1ad3d804b0aa7f0d9b7a204bfbce3)
+        ;
+
+        
+    
+    
+                marker_490941ab974ba06171d6025cd424c5b4.setIcon(icon_2c1359aa6f897a66cab9f8b8e365a87c);
+            
+    
+            var marker_84bfc2774c3c5b193303b6e7ef28a47c = L.marker(
+                [41.7046, 44.7941],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_0354345d1486102e5fc9c960888c3d1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f50788dc5d8d169dc62f6bcffd6b6949 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e728fe5508f531b32db538d8f84857b = $(`<div id="html_5e728fe5508f531b32db538d8f84857b" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.7046,44.7941" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Shavi Lomi     </a><br>A cozy, artsy restaurant serving modern Georgian cuisine with a creative touch.     </div>`)[0];
+                popup_f50788dc5d8d169dc62f6bcffd6b6949.setContent(html_5e728fe5508f531b32db538d8f84857b);
+            
+        
+
+        marker_84bfc2774c3c5b193303b6e7ef28a47c.bindPopup(popup_f50788dc5d8d169dc62f6bcffd6b6949)
+        ;
+
+        
+    
+    
+                marker_84bfc2774c3c5b193303b6e7ef28a47c.setIcon(icon_0354345d1486102e5fc9c960888c3d1a);
+            
+    
+            var marker_77cc7fa2f1fe1e093c9c592f592a6f90 = L.marker(
+                [41.6958, 44.8033],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_e3e2b55becdd138ed1f460dfed83b8b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e83e6050ef4c40023c0f3501ce2997e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f7b391b38971da30f6506e73037f652b = $(`<div id="html_f7b391b38971da30f6506e73037f652b" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.6958,44.8033" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Puri Guliani     </a><br>A stylish bakery and café with excellent coffee and a relaxing riverside view.     </div>`)[0];
+                popup_0e83e6050ef4c40023c0f3501ce2997e.setContent(html_f7b391b38971da30f6506e73037f652b);
+            
+        
+
+        marker_77cc7fa2f1fe1e093c9c592f592a6f90.bindPopup(popup_0e83e6050ef4c40023c0f3501ce2997e)
+        ;
+
+        
+    
+    
+                marker_77cc7fa2f1fe1e093c9c592f592a6f90.setIcon(icon_e3e2b55becdd138ed1f460dfed83b8b0);
+            
+    
+            var marker_df3a35f6a5ced11c99c7a615c2f4d4b2 = L.marker(
+                [41.6947, 44.7856],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_bfb1e3ba2724fdf92466ed505c731aa7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8b6a4ae795990a33bbf80dc1c29c2a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_20d717c52419c54f34c1c67e3c2f6a23 = $(`<div id="html_20d717c52419c54f34c1c67e3c2f6a23" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.6947,44.7856" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Mtatsminda Park     </a><br>The highest viewpoint in Tbilisi, reachable by funicular, offering incredible panoramic views.     </div>`)[0];
+                popup_a8b6a4ae795990a33bbf80dc1c29c2a5.setContent(html_20d717c52419c54f34c1c67e3c2f6a23);
+            
+        
+
+        marker_df3a35f6a5ced11c99c7a615c2f4d4b2.bindPopup(popup_a8b6a4ae795990a33bbf80dc1c29c2a5)
+        ;
+
+        
+    
+    
+                marker_df3a35f6a5ced11c99c7a615c2f4d4b2.setIcon(icon_bfb1e3ba2724fdf92466ed505c731aa7);
+            
+    
+            var marker_eb2e36a113aaf66abc61dee3b845b074 = L.marker(
+                [41.6881, 44.8074],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_e51ec17f6714f0295929b4e0ef04bac8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cae0f1e5d53dd3a9bf6cea8013da66a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0daa6483d3a8ab64d4187c04cc110c8d = $(`<div id="html_0daa6483d3a8ab64d4187c04cc110c8d" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.6881,44.8074" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Narikala Fortress     </a><br>An ancient fortress overlooking Tbilisi’s old town and river, perfect for sunset views.     </div>`)[0];
+                popup_6cae0f1e5d53dd3a9bf6cea8013da66a.setContent(html_0daa6483d3a8ab64d4187c04cc110c8d);
+            
+        
+
+        marker_eb2e36a113aaf66abc61dee3b845b074.bindPopup(popup_6cae0f1e5d53dd3a9bf6cea8013da66a)
+        ;
+
+        
+    
+    
+                marker_eb2e36a113aaf66abc61dee3b845b074.setIcon(icon_e51ec17f6714f0295929b4e0ef04bac8);
+            
+    
+            var marker_7f44f7e4a73115c3deed4b33651c16bb = L.marker(
+                [41.6928, 44.8083],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_333b8d6c3e00b3313075592382424647 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03eab3cd54a2f5b1604c7f12718a91bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2a427b8657c91bf298d11be5ed9ae16 = $(`<div id="html_a2a427b8657c91bf298d11be5ed9ae16" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.6928,44.8083" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Metekhi Bridge Viewpoint     </a><br>A prime viewpoint offering a picturesque view of Tbilisi’s old town and the river at night.     </div>`)[0];
+                popup_03eab3cd54a2f5b1604c7f12718a91bf.setContent(html_a2a427b8657c91bf298d11be5ed9ae16);
+            
+        
+
+        marker_7f44f7e4a73115c3deed4b33651c16bb.bindPopup(popup_03eab3cd54a2f5b1604c7f12718a91bf)
+        ;
+
+        
+    
+    
+                marker_7f44f7e4a73115c3deed4b33651c16bb.setIcon(icon_333b8d6c3e00b3313075592382424647);
+            
+    
+            var marker_b586c963b9fd289873d2058d6fab8019 = L.marker(
+                [41.842, 44.7204],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_5a8feff468c8a5600ac948fa527e7583 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_65e8577f66ed9b7ff8e2f6e6df5af523 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a54242a2c0c23b28b0116930b9275c75 = $(`<div id="html_a54242a2c0c23b28b0116930b9275c75" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.842,44.7204" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Mtskheta - Jvari Monastery     </a><br>A 6th-century hilltop monastery overlooking the confluence of two rivers, offering one of Georgia’s best views.     </div>`)[0];
+                popup_65e8577f66ed9b7ff8e2f6e6df5af523.setContent(html_a54242a2c0c23b28b0116930b9275c75);
+            
+        
+
+        marker_b586c963b9fd289873d2058d6fab8019.bindPopup(popup_65e8577f66ed9b7ff8e2f6e6df5af523)
+        ;
+
+        
+    
+    
+                marker_b586c963b9fd289873d2058d6fab8019.setIcon(icon_5a8feff468c8a5600ac948fa527e7583);
+            
+    
+            var marker_5bbc7931a1eff933e0377d58212a381b = L.marker(
+                [41.8414, 44.7173],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_8214e1229a671ffd3a318770e317bb94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be3e10af51b03854fd70645727261d7d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7aa1c19a1749aa7fd851b7d154808174 = $(`<div id="html_7aa1c19a1749aa7fd851b7d154808174" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.8414,44.7173" target="_blank" style="font-weight: bold; text-decoration: none; color: #007AFF;">         Mtskheta - Svetitskhoveli Cathedral     </a><br>A historic UNESCO-listed medieval cathedral in Georgia’s ancient capital, known for its stunning frescoes and significance.     </div>`)[0];
+                popup_be3e10af51b03854fd70645727261d7d.setContent(html_7aa1c19a1749aa7fd851b7d154808174);
+            
+        
+
+        marker_5bbc7931a1eff933e0377d58212a381b.bindPopup(popup_be3e10af51b03854fd70645727261d7d)
+        ;
+
+        
+    
+    
+                marker_5bbc7931a1eff933e0377d58212a381b.setIcon(icon_8214e1229a671ffd3a318770e317bb94);
+            
+    
+            var marker_8c2b449ff4199f9b3988c2df1fc02699 = L.marker(
+                [41.7059, 44.7853],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_dbe4bfe693b7f046e4781e968ca8edb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e95817730527f0ebab757fd40189f3c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d7556af8d1639e8e35b7fda40abf27d = $(`<div id="html_0d7556af8d1639e8e35b7fda40abf27d" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.7059,44.7853" target="_blank" style="font-weight: bold; text-decoration: none; color: #FF3B30;">         Lolita Café     </a><br>A trendy, modern café with a laid-back vibe, perfect for brunch or drinks.     </div>`)[0];
+                popup_2e95817730527f0ebab757fd40189f3c.setContent(html_0d7556af8d1639e8e35b7fda40abf27d);
+            
+        
+
+        marker_8c2b449ff4199f9b3988c2df1fc02699.bindPopup(popup_2e95817730527f0ebab757fd40189f3c)
+        ;
+
+        
+    
+    
+                marker_8c2b449ff4199f9b3988c2df1fc02699.setIcon(icon_dbe4bfe693b7f046e4781e968ca8edb0);
+            
+    
+            var marker_d252d11b552b5086234055fe2de19c93 = L.marker(
+                [41.712, 44.8014],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_6a8639b825ee8175dd06aeb916014321 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6d896a24228b44bdded87a83b978fca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f5004f50765bd6ad4619af7a6c3ed09 = $(`<div id="html_9f5004f50765bd6ad4619af7a6c3ed09" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.712,44.8014" target="_blank" style="font-weight: bold; text-decoration: none; color: #FF3B30;">         Fabrika     </a><br>A hipster paradise, converted from an old Soviet sewing factory into a creative space with bars, cafés, and shops.     </div>`)[0];
+                popup_f6d896a24228b44bdded87a83b978fca.setContent(html_9f5004f50765bd6ad4619af7a6c3ed09);
+            
+        
+
+        marker_d252d11b552b5086234055fe2de19c93.bindPopup(popup_f6d896a24228b44bdded87a83b978fca)
+        ;
+
+        
+    
+    
+                marker_d252d11b552b5086234055fe2de19c93.setIcon(icon_6a8639b825ee8175dd06aeb916014321);
+            
+    
+            var marker_e83c29e1094d711af0ce3b5cc7a8c62c = L.marker(
+                [41.7032, 44.7448],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_309f00836469727234f04e058991e9da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_464c771e5cafa83d649ef028db11da8e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b3dca27e3007bb645ebd810fbffcb1b3 = $(`<div id="html_b3dca27e3007bb645ebd810fbffcb1b3" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.7032,44.7448" target="_blank" style="font-weight: bold; text-decoration: none; color: #FF3B30;">         Vake Park     </a><br>One of Tbilisi’s most famous parks, a relaxing place for walks, picnics, and hanging out.     </div>`)[0];
+                popup_464c771e5cafa83d649ef028db11da8e.setContent(html_b3dca27e3007bb645ebd810fbffcb1b3);
+            
+        
+
+        marker_e83c29e1094d711af0ce3b5cc7a8c62c.bindPopup(popup_464c771e5cafa83d649ef028db11da8e)
+        ;
+
+        
+    
+    
+                marker_e83c29e1094d711af0ce3b5cc7a8c62c.setIcon(icon_309f00836469727234f04e058991e9da);
+            
+    
+            var marker_108010b4ad714aa61fb500e50ab2d875 = L.marker(
+                [41.6934, 44.81],
+                {
+}
+            ).addTo(map_5e432fa81c1fde0591c85a9734e12cb8);
+        
+    
+            var icon_554fe74339195bb6568e5651656864d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e28d352cebdbec33ae1ad27d4b188a4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9c14ce64911b6aa6a68420b1bcc1517c = $(`<div id="html_9c14ce64911b6aa6a68420b1bcc1517c" style="width: 100.0%; height: 100.0%;">          <style>         body, h4, a, p {             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             font-size: 14px;         }     </style>      <a href="https://www.google.com/maps/search/?api=1&query=41.6934,44.81" target="_blank" style="font-weight: bold; text-decoration: none; color: #FF3B30;">         Cable Car (Rike Park Station)     </a><br>The main cable car station that connects Rike Park with the Narikala Fortress. Great city views!     </div>`)[0];
+                popup_9e28d352cebdbec33ae1ad27d4b188a4.setContent(html_9c14ce64911b6aa6a68420b1bcc1517c);
+            
+        
+
+        marker_108010b4ad714aa61fb500e50ab2d875.bindPopup(popup_9e28d352cebdbec33ae1ad27d4b188a4)
+        ;
+
+        
+    
+    
+                marker_108010b4ad714aa61fb500e50ab2d875.setIcon(icon_554fe74339195bb6568e5651656864d3);
+            
+</script>
+</html>
